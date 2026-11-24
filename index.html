@@ -114,12 +114,12 @@ footer a{color:var(--gold)}
 .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;margin-top:14px}
 .footer-links a{font-size:12px}
 @media(max-width:950px){.nav-links{display:none;position:absolute;top:90px;left:0;right:0;background:white;flex-direction:column;padding:25px;box-shadow:0 10px 20px rgba(0,0,0,.1)}.nav-links.show{display:flex}.menu-btn{display:block}.about-grid,.contact-grid,.diag-box,.corp-grid{grid-template-columns:1fr}}
-@media(max-width:700px){.topline{font-size:8px;letter-spacing:1px}.nav{padding:10px 5%}.brand img{width:53px;height:53px}.brand-name{font-size:16px}.brand small{font-size:7px;letter-spacing:1px}.hero{padding:85px 7%;min-height:480px}.hero h1{font-size:42px}.hero p{font-size:15px}.stats{grid-template-columns:1fr;gap:5px}.stat{border-right:0;border-bottom:1px solid #40516A}section{padding:65px 6%}.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.magazine-box{padding:30px 22px;flex-direction:column;align-items:flex-start}.magazine-actions{width:100%}.contact-info,form{padding:25px}}
+@media(max-width:700px){.magazine-box{grid-template-columns:1fr !important;padding:0 !important}.magazine-box img{height:300px !important}}
 </style>
 </head>
 <body>
 <div class="topline">BUSINESS TRANSFORMATION &nbsp; | &nbsp; BUSINESS ADVISORY &nbsp; | &nbsp; MENTORING & COACHING</div>
-<header><nav class="nav">
+<header><nav class="nav"
 <a href="#home" class="brand"><img src="IMG-20261123-WA8517.jpg" alt="Gubela Holdings Logo"><div class="brand-name">GUBELA <span>HOLDINGS</span><small>STRATEGY. TRANSFORMATION. GROWTH.</small></div></a>
 <button class="menu-btn" onclick="document.getElementById('menu').classList.toggle('show')">☰</button>
 <div class="nav-links" id="menu">
