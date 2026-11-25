@@ -23,7 +23,7 @@ header{background:white;position:relative;top:0;z-index:1000;box-shadow:0 3px 20
 .nav-links a{font-size:12px;font-weight:bold;color:var(--navy)}
 .nav-links a:hover{color:var(--gold)}
 .nav-links .nav-cta{background:var(--navy);color:white;padding:13px 20px;border-radius:2px}
-..menu-btn{display:none;background:var(--navy);color:white;border:0;padding:10px 14px;font-size:23px;cursor:pointer;position:absolute;right:15px;top:15px;left:auto;z-index:1001}
+..menu-btn{display:none;background:var(--navy);color:white;border:0;padding:14px 18px;font-size:28px;cursor:pointer;position:absolute;right:15px;top:15px;right:auto;z-index:1001}
 .hero{background:linear-gradient(100deg,rgba(9,22,41,.97),rgba(16,30,53,.82)),url("IMG-20261123-WA8517.jpg") center/cover;color:white;padding:120px 8%;min-height:540px;display:flex;align-items:center}
 .hero-content{max-width:880px}
 .eyebrow{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:3px;margin-bottom:23px}
@@ -121,7 +121,7 @@ footer a{color:var(--gold)}
 <div class="topline">BUSINESS TRANSFORMATION &nbsp; | &nbsp; BUSINESS ADVISORY &nbsp; | &nbsp; MENTORING & COACHING</div>
 <header><nav class="nav">
 <a href="#home" class="brand"><img src="IMG-20261123-WA8517.jpg" alt="Gubela Holdings Logo"><div class="brand-name">GUBELA <span>HOLDINGS</span><small>STRATEGY. TRANSFORMATION. GROWTH.</small></div></a>
-<button class="menu-btn" onclick="document.getElementById('menu').classList.toggle('show')">☰</button>
+<button class="menu-btn" onclick="document.getElementById('menu').classList.remove('show')">☰</button>
 <div class="nav-links" id="menu">
 <a href="#home" onclick="closeMenu()">HOME</a>
 <a href="#about" onclick="closeMenu()">ABOUT</a>
