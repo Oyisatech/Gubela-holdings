@@ -12,7 +12,7 @@ html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:white;color:var(--navy);line-height:1.7}
 a{text-decoration:none}
 .topline{background:#091629;color:#D8DEE8;padding:9px 7%;font-size:10px;letter-spacing:2px;text-align:center}
-header{background:white;position:sticky;top:0;z-index:1000;box-shadow:0 3px 20px rgba(0,0,0,.06)}
+header{background:white;position:relative;top:0;z-index:1000;box-shadow:0 3px 20px rgba(0,0,0,.06)}
 ..nav{min-height:120px;padding:15px 7%;display:flex;align-items:center;justify-content:center;gap:10px;flex-direction:column;text-align:center}
 .brand{display:flex;align-items:center;gap:8px;flex-direction:column;text-align:center;justify-content:center}
 .brand img{width:220px;height:auto;object-fit:contain}
@@ -23,7 +23,7 @@ header{background:white;position:sticky;top:0;z-index:1000;box-shadow:0 3px 20px
 .nav-links a{font-size:12px;font-weight:bold;color:var(--navy)}
 .nav-links a:hover{color:var(--gold)}
 .nav-links .nav-cta{background:var(--navy);color:white;padding:13px 20px;border-radius:2px}
-.menu-btn{display:none;background:var(--navy);color:white;border:0;padding:10px 14px;font-size:23px;cursor:pointer}
+..menu-btn{display:none;background:var(--navy);color:white;border:0;padding:10px 14px;font-size:23px;cursor:pointer;position:absolute;right:15px;top:15px;left:auto;z-index:1001}
 .hero{background:linear-gradient(100deg,rgba(9,22,41,.97),rgba(16,30,53,.82)),url("IMG-20261123-WA8517.jpg") center/cover;color:white;padding:120px 8%;min-height:540px;display:flex;align-items:center}
 .hero-content{max-width:880px}
 .eyebrow{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:3px;margin-bottom:23px}
