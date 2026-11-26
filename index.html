@@ -219,35 +219,48 @@ footer a{color:var(--gold)}
 <section id="contact" class="contact">
 <div class="container">
 <div class="section-label">LET'S WORK TOGETHER</div>
-<h2>Book a <span>Consultation.</span></h2>
-<p class="intro">
-Whether you are an entrepreneur, an established SMME or a corporate organisation,
-Gubela Holdings is ready to understand your needs and explore how we can work together.
+<form onsubmit="bookWhatsApp(event)">
+<h3>Book a Consultation</h3>
+<p style="color:var(--text);font-size:14px;margin-bottom:20px"><b>R500 / 30 mins</b> - Get clear direction for your business in 30 minutes.</p>
+
+<input type="text" id="bkName" placeholder="Your Name" required>
+<input type="tel" id="bkPhone" placeholder="Your Phone" required>
+<input type="email" id="bkEmail" placeholder="Your Email" required>
+
+<select id="bkHelp" required>
+<option value="">What do you need help with?</option>
+<option>Business Advisory</option>
+<option>Business Diagnostics</option>
+<option>Mentoring & Coaching</option>
+<option>Corporate & ESD Programmes</option>
+<option>Strategic Partnerships</option>
+<option>Other</option>
+</select>
+
+<textarea id="bkBiz" placeholder="Tell us about your business" required></textarea>
+
+<button type="submit" class="submit" style="border-radius:30px">Book on WhatsApp</button>
+
+<p style="font-size:13px;color:var(--navy);margin-top:18px;line-height:1.8">
+<b>Phone:</b> 078 450 7503<br>
+<b>Email:</b> zanele@gubela.co.za<br>
+<b>Company Reg:</b> 2019/022301/07 | <b>VAT:</b> 4020287662<br>
+<b>Location:</b> Durban, KZN | Serving Johannesburg
 </p>
+</form>
 
-<div class="contact-grid">
-
-<div class="contact-info">
-<h3>Get in Touch</h3>
-
-<p><strong>BUSINESS</strong><br>
-Gubela Holdings (Pty) Ltd</p>
-
-<p><strong>EMAIL</strong><br>
-<a href="mailto:zanele@gubela.co.za" style="color:#ffffff;">zanele@gubela.co.za</a></p>
-
-<p><strong>TELEPHONE</strong><br>
-<a href="tel:+27784507503" style="color:#ffffff;">078 450 7503</a></p>
-
-<p><strong>WHATSAPP</strong><br>
-<a href="https://wa.me/27784507503?text=Hi%20Gubela%20Holdings,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" style="color:#ffffff;">Chat with Gubela Holdings</a></p>
-
-<p><strong>ENQUIRIES</strong><br>
-Business Advisory<br>
-Business Diagnostics<br>
-Mentorship & Coaching<br>
-Corporate & ESD Programmes<br>
-Strategic Partnerships</p>
+<script>
+function bookWhatsApp(e){
+e.preventDefault();
+var name=document.getElementById('bkName').value;
+var phone=document.getElementById('bkPhone').value;
+var email=document.getElementById('bkEmail').value;
+var help=document.getElementById('bkHelp').value;
+var biz=document.getElementById('bkBiz').value;
+var msg="Hi Gubela, I want to Book a Consultation (R500 / 30 mins)%0A%0A*Name:* "+encodeURIComponent(name)+"%0A*Phone:* "+encodeURIComponent(phone)+"%0A*Email:* "+encodeURIComponent(email)+"%0A*I need help with:* "+encodeURIComponent(help)+"%0A*About my business:* "+encodeURIComponent(biz);
+window.open("https://wa.me/27784507503?text="+msg,"_blank");
+}
+</script>
 
 <a class="btn" href="https://wa.me/27784507503?text=Hi%20Gubela%20Holdings,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">SEND A WHATSAPP ENQUIRY</a>
 </div>
